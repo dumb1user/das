@@ -1,0 +1,2 @@
+- name: Yandex Cloud CR "Login" Action for GitHub Actions
+  uses: yc-actions/yc-cr-login@v0.1-alpha
