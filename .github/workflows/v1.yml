@@ -1,2 +1,19 @@
-- name: Yandex Cloud CR "Login" Action for GitHub Actions
-  uses: yc-actions/yc-cr-login@v0.1-alpha
+name: Push and Deploy Serverless function
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: goodsmileduck/yandex-serverless-action@v1
+      with:
+        token: ${{ AQAAAAA0Nm7zAATuwRYE2Y4geEtzhLbafnw6d4M}}
+        bucket: ${{ secrets.BUCKET }}
+        function_id: 'b1g21tg2vgshrh8141s9'
+        runtime: 'python37'
+        memory: '256'
+        entrypoint: 'main.handler'
+        environment: DEBUG=True,COUNT=1
+        source: '.'
+        exclude: 'src/'
