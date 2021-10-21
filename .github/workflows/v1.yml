@@ -8,9 +8,9 @@ jobs:
     - uses: actions/checkout@master
     - uses: goodsmileduck/yandex-serverless-action@v1
       with:
-        token: ${{ AQAAAAA0Nm7zAATuwRYE2Y4geEtzhLbafnw6d4M}}
+        token: ${{ secrets.TOKEN }}
         bucket: ${{ secrets.BUCKET }}
-        function_id: 'b1g21tg2vgshrh8141s9'
+        function_id: '234awefq12345g24f'
         runtime: 'python37'
         memory: '256'
         entrypoint: 'main.handler'
