@@ -14,10 +14,4 @@ jobs:
         with:
           registry: yc.io
           username: oauth
-          password: AQAAAAA0Nm7zAATuwRYE2Y4geEtzhLbafnw6d4M
-    name: Build and push
-        id: docker_build
-        uses: docker/build-push-action@v2
-        with:
-          push: true
-          tags: user/app:latest
+          password: AQAAAAA0Nm7zAATuwRYE2Y4geEtzhLbafnw6d
