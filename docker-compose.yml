@@ -1,0 +1,10 @@
+
+
+version: "3"
+
+
+
+services:
+ moe:
+  image: cr.yandex/crpqi4tdcdpvjegk0nu4/ubuntu:latest
+ 
